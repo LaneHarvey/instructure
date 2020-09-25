@@ -1,0 +1,65 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.bg-image {
+    background-image: url("city.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.weather {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 25px;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    color: hsl(37, 10%, 90%);
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%;
+    font-size: 100px;   
+}
+.topbar {
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.red-box {
+    padding: 15px;
+    background-color: hsl(356, 44%, 73%);
+    border: 1px solid hsl(342, 37%, 53%);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.stocks {
+    padding: 15px;
+    background-color: hsl(90, 5%, 47%);
+    border: 1px solid hsl(157, 43%, 73%)
+}
