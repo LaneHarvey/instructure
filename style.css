@@ -5,6 +5,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
 }
 
 .bg-image {
@@ -63,16 +65,56 @@ body {
     justify-content: space-between;
 }
 
+.date {
+    margin-left: 10px;
+}
+
+.current-weather {
+    margin-right: 10px;
+}
+
 .red-box {
-    padding: 15px;
-    background-color: hsl(356, 44%, 73%);
-    border: 1px solid hsl(342, 37%, 53%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 5px 15px;
+    background: linear-gradient(90deg, hsl(342, 37%, 53%) 35%, hsl(356, 44%, 73%) 100%);
+    /* border: 6px solid hsl(344, 26%, 44%); */
     margin-left: 5px;
     margin-right: 5px;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.red-box-border {
+    padding: 3px 0;
+    position: relative;
+    background: linear-gradient(to right, hsl(344, 26%, 44%), rgb(149, 98, 108));
+}
+
+.red-box img {
+    max-width: 40px;
+    margin-left: -5px;
 }
 
 .stocks {
     padding: 15px;
     background-color: hsl(90, 5%, 47%);
-    border: 1px solid hsl(157, 43%, 73%)
+    border: 1px solid hsl(157, 43%, 73%);
+
+    CoralTree:       hsl(351, 26%, 52%);
+    Platinum:         hsl(37, 10%, 90%);
+
+    SilverChalice:   hsl(93, 7%, 68%);
+    Gunsmoke:         hsl(90, 5%, 47%);
+    Rock:             hsl(50, 19%, 30%);
+
+    CanCan:          hsl(356, 44%, 73%);
+    Tapestry:         hsl(342, 37%, 53%);
+    Toledo:           hsl(314, 18%, 19%);
 }
+
+
+
+
