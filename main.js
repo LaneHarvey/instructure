@@ -60,7 +60,7 @@ let currentCondition;
 let currentTemp;
 let currentTempIcon
 
-const url = 'http://api.weatherapi.com/v1/current.json?key=0a3fb8be05f748b99d5223448202609&q=Ogden';
+const url = 'https://api.weatherapi.com/v1/current.json?key=0a3fb8be05f748b99d5223448202609&q=Ogden';
 
 fetch(url)
   .then(response => response.json())
