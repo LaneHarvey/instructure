@@ -1,7 +1,10 @@
 const today = new Date();
 
+const options = { month: 'numeric', day: 'numeric' };
+
 const month = today.toLocaleString('default', { month: 'long' });
 const weekday = today.getDate();
+const numericDay = today.toLocaleDateString('default', options)
 
 switch (new Date().getDay()) {
   case 0:
@@ -46,9 +49,11 @@ const time = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',
 console.log(time)
 
 const clock = document.querySelector(".clock");
+const numericDate = document.querySelector(".numeric-date")
 const date = document.querySelector(".date");
 
 clock.innerHTML = time;
+numericDate.innerHTML = numericDay;
 date.innerHTML = `${day}, ${month} ${getOrdinalNum(weekday)}`;
 
 let currentCondition;
