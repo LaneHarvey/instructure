@@ -53,7 +53,7 @@ body {
     font-weight: 500;
     /* border: 1px solid black; */
     padding: 20px;
-    font-size: 200px;
+    font-size: 100px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     text-shadow: 4px 4px 13px rgba(0, 0, 0, 1);
@@ -67,20 +67,22 @@ body {
 
 .date {
     margin-left: 10px;
+    color: hsl(90, 5%, 47%);
 }
 
 .current-weather {
     margin-right: 10px;
+    color: hsl(90, 5%, 47%);
 }
 
 .red-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
+    height: 30px;
     padding: 5px 15px;
     background: linear-gradient(90deg, hsl(342, 37%, 53%) 35%, hsl(356, 44%, 73%) 100%);
-    /* border: 6px solid hsl(344, 26%, 44%); */
+    border-radius: 2px;
     margin-left: 5px;
     margin-right: 5px;
     font-size: 24px;
@@ -91,30 +93,36 @@ body {
     padding: 3px 0;
     position: relative;
     background: linear-gradient(to right, hsl(344, 26%, 44%), rgb(149, 98, 108));
+    border-radius: 2px;
+}
+.stocks-border {
+    display: flex;
+    flex-direction: row;
+    padding: 3px 0;
+    position: relative;
+    border-radius: 2px;
 }
 
 .red-box img {
-    max-width: 40px;
+    max-width: 30px;
     margin-left: -5px;
 }
 
 .stocks {
     padding: 15px;
-    background-color: hsl(90, 5%, 47%);
-    border: 1px solid hsl(157, 43%, 73%);
-
-    CoralTree:       hsl(351, 26%, 52%);
-    Platinum:         hsl(37, 10%, 90%);
-
-    SilverChalice:   hsl(93, 7%, 68%);
-    Gunsmoke:         hsl(90, 5%, 47%);
-    Rock:             hsl(50, 19%, 30%);
-
-    CanCan:          hsl(356, 44%, 73%);
-    Tapestry:         hsl(342, 37%, 53%);
-    Toledo:           hsl(314, 18%, 19%);
+    background: linear-gradient(90deg, #7f8579 35%, #acb0a6 100%);
+    /* border: 2px solid #81877b; */
+    border-radius: 2px;
 }
 
-
+.stocks-border {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    background: linear-gradient(to right, #6f6f5e, #848273);
+    border-radius: 2px;
+}
 
 
